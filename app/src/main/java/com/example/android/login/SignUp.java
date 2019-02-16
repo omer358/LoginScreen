@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
-    EditText firstName,secondName,youEmail,youPassword,phoneNumber;
+    EditText firstName,secondName,youEmail,youPassword,phoneNumber,confirmPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class SignUp extends AppCompatActivity {
        secondName=(EditText)findViewById(R.id.second_name);
        youEmail=(EditText)findViewById(R.id.your_Email);
        youPassword=(EditText)findViewById(R.id.your_password);
+       confirmPassword=(EditText)findViewById(R.id.confirm_password);
        phoneNumber=(EditText)findViewById(R.id.phone_number);
 
         Intent intent = new Intent(this, DisplaySignUpInfo.class);
@@ -36,6 +37,10 @@ public class SignUp extends AppCompatActivity {
                 youEmail.getText().toString().equals("")|| youPassword.getText().toString().equals("")){
             Toast.makeText(getBaseContext(),"There fields are empty",Toast.LENGTH_SHORT).show();
 
+        }
+        else if (youPassword.getText().toString().equals(confirmPassword.getText().toString())!=true)
+        {
+            Toast.makeText(getApplicationContext(),"password does not match",Toast.LENGTH_SHORT).show();
         }
         else {
             intent.putExtras(b1);

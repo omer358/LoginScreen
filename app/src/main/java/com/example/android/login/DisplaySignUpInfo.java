@@ -23,8 +23,8 @@ public class DisplaySignUpInfo extends AppCompatActivity {
 
         ArrayList<Info> infosSignUp=new ArrayList<Info>();
 
-        infosSignUp.add(new Info("first Name:\n"+firstName,"secondName:\n"+secondName,
-                "your Email:\n"+yourEmail,"your Password:\n"+yourPassword,"Phone Number\n"+phoneNumber));
+        infosSignUp.add(new Info("first Name:\n"+firstName,"second Name:\n"+secondName,
+                "your Email:\n"+yourEmail,"your Password:\n"+yourPassword,"Phone Number:\n"+phoneNumber));
 
 
 

@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(),"you must input the the email and password",Toast.LENGTH_SHORT).show();
 
         }
+
         else {
             intent.putExtras(b);
             startActivity(intent);

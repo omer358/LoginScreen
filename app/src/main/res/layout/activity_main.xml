@@ -27,48 +27,36 @@
         android:gravity="center"
         android:textSize="80sp"
         android:textColor="#fff"
-        android:layout_marginTop="32dp"
-        android:fontFamily="monospace" />
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:inputType="textEmailAddress"/>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="85dp">
-    <AutoCompleteTextView
-
+    <EditText
         android:id="@+id/emailText"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:textColorHint="#fff"
-        android:hint="Email"
-        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@mipmap/user"
+        android:drawablePadding="8dp"
+        android:hint="Username or Email"
         android:paddingLeft="8dp"
-        android:inputType="textEmailAddress"
-        />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:maxLines="1"
+        android:singleLine="true"/>
     <EditText
-
         android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@mipmap/password"
+        android:drawablePadding="8dp"
+        android:hint="password"
         android:paddingLeft="8dp"
-        android:hint="password "
-        android:textColorHint="#fff"
-        android:textColor="#fff"
-        android:inputType="textPassword"
-        />
-    </android.support.design.widget.TextInputLayout>
+        android:inputType="textPassword"/>
+
 
     <Button
         android:layout_width="wrap_content"
@@ -78,8 +66,9 @@
         android:text="Login"
         android:textSize="16sp"
         android:onClick="login"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_round"
         android:textColor="#fff"
+        android:textAllCaps="false"
        />
     <LinearLayout
         android:layout_width="match_parent"
@@ -90,7 +79,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="1dp"
-            android:background="#fff"/>
+            android:background="#fff"
+            android:layout_marginTop="15dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,25 +91,28 @@
         android:paddingLeft="8dp"
         android:textColor="#fff"
         android:fontFamily="monospace"
-        android:layout_gravity="center_horizontal"/>
+        android:gravity="top"
+        />
         <View
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="1dp"
-            android:background="#fff"/>
+            android:background="#fff"
+            android:layout_marginTop="15dp"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/sign_up_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
         android:text="sign up"
         android:textSize="16sp"
         android:onClick="signUp"
-        android:background="@color/colorAccent"
-        android:textColor="#fff"/>
+        android:background="@drawable/button_round"
+        android:textColor="#fff"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
 </ScrollView>

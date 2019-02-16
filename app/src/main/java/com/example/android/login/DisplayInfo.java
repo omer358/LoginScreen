@@ -22,7 +22,7 @@ public class DisplayInfo extends AppCompatActivity {
 
         final ArrayList<Info> infos=new ArrayList<Info>();
 
-        infos.add(new Info("Email: "+email,"Password: "+password));
+        infos.add(new Info("Email:\n"+email,"Password:\n"+password));
 
 
 
